@@ -3,7 +3,14 @@
 const express = require("express");
 const app = express();
 
+const { NotFoundError } = require("./expressError")
+
+
+const morgan = require("morgan");
 const itemRoutes = require("./itemRoutes");
+
+// log requests
+app.use(morgan('dev'));
 
 // Get a middleware function and register it for all routes
 app.use(express.json());

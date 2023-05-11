@@ -1,7 +1,6 @@
 "use strict";
 
-
-// FIXME: how can we use spaces with these in the URL? 
+// FIXME: how can we use spaces with these in the URL?
 const items = [
   { name: "CurriedDuck", price: 14.50 },
   { name: "DarkSouls", price: 69.69 },
